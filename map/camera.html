@@ -1,28 +1,15 @@
 <html>
     <head>
         <title>神戸大学附属中等教育学校 WEB校内地図 現在地確認用 カメラ起動</title>
+        <style>body{background-color: #ddf;}</style>
+        <script>function map_home(){location.href="web_map_home.html"}</script>
     </head>
     <body>
-        <style>
-            body{
-                background-color: #ddf;
-            }
-        </style>
         <h1>神戸大学附属中等教育学校 WEB校内地図 カメラ起動</h1>
-        <script>
-            function map_home(){
-                location.href="home.html"
-            }
-        </script>
-        
         <input type="button" value="Homeへ" onclick="map_home()">
-
         <div>
             <h1>WEBカメラの映像を表示</h1>
-            <div>
-                <video id="video"></video>
-            </div>
-            
+            <div><video id="video"></video></div>
         </div>  
         <script>
             const video = document.getElementById("video")
@@ -36,6 +23,5 @@
               console.log(e)
             })
         </script> 
-
     </body>
-</html
+</html>
