@@ -5,7 +5,7 @@
     <body>
         <style>
             body{
-                background-color: rgb(0, 255, 225);
+                background-color: #ddf;
             }
         </style>
         <h1>神戸大学附属中等教育学校 WEB校内地図 Home</h1>
@@ -31,6 +31,9 @@
             function camera(){
                 location.href="web_map_camera.html"
             }
+            function credit(){
+                location.href="web_credit.html"
+            }
         </script>
         <form>
             <input type="button" value="校内全体地図" onclick="map_all()">
@@ -52,6 +55,9 @@
             <br>
             <br>
             <input type="button" value="現在位置表示(タグ読み込み/カメラ使用)" onclick="camera()">
+            <br>
+            <br>
+            <input type="button" value="クレジット" onclick="credit()">
         </form>
         <style>
             input[type="button"{
