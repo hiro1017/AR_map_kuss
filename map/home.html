@@ -3,7 +3,7 @@
         <title>神戸大学附属中等教育学校 WEB校内地図</title>
         <style>
             body{background-color: #ddf;}
-            input[type="button"]{width:300px;border:1px solid black;}
+            input[type="button"]{width:350px;border:1px solid black;}
         </style>
         <script>
             function map_all(){location.href="map.html"}
@@ -12,6 +12,8 @@
             function map_c(){location.href="map_c.html"}
             function map_d(){location.href="map_d.html"}
             function map_e(){location.href="map_e.html"}
+            function map_arena(){location.href="map_arena.html"}
+            function map_other(){location.href="map_other.html"}
             function camera(){location.href="camera.html"}
             function credit(){location.href="credits.html"}
         </script>
@@ -19,7 +21,7 @@
     <body>
         <h1>神戸大学附属中等教育学校 WEB校内地図</h1>
         <form>
-            <input type="button" value="校内全体地図" onclick="map_all()">
+            <input type="button" value="校内全体平面地図　(中庭・B棟・C棟・D棟・E棟)" onclick="map_all()">
             <br>
             <br>
             <input type="button" value="校内A棟地図" onclick="map_a()">
@@ -35,6 +37,12 @@
             <br>
             <br>
             <input type="button" value="校内E棟地図" onclick="map_e()">
+            <br>
+            <br>
+            <input type="button" value="アリーナ地図" onclick="map_arena()">
+            <br>
+            <br>
+            <input type="button" value="中庭及び仲良しロード地図" onclick="map_other()">
             <br>
             <br>
             <input type="button" value="現在位置表示(タグ読み込み/カメラ使用)" onclick="camera()">
